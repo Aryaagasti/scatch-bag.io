@@ -1,0 +1,27 @@
+usermodel
+full name - string
+email - string
+password -string
+cart - array
+isadmin - booolean
+order -array
+contact - number
+picture - db
+
+
+product model
+image
+name
+price
+description
+discount
+bgcolor
+textcolor
+
+
+/-> signup or login
+/shop -> shop
+/users/cart -> cart
+/admin -> admin pannel
+/owner/products -> show all product
+/owner/admin -> show admin panel to create products

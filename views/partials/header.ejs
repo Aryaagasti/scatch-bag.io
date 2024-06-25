@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scatch ecommerce for shopping bags</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmlTlVMEvhRmX94uQtClpdrS-vD7BVUuI84w&s" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-['helvetica_now_display']">
+    <nav class="w-full fixed top-0 left-0 px-5 py-3 bg-gray-800 text-white flex justify-between items-center">
+        <a href="/" class="text-xl hover:text-gray-300">Scatch</a>
+        <% var loggedin = typeof loggedin !== "undefined" ? loggedin : true  %>
+        <% if(loggedin){ %>
+            <div class="flex items-center gap-4">
+                <a href="/shop" class="hover:text-gray-300">Shop</a>
+                <a href="/cart" class="hover:text-gray-300">Cart</a>
+                <a href="/my-account" class="hover:text-gray-300">My Account</a>
+                <form action="/users/logout" method="post" class="inline">
+                    <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                        Logout
+                    </button>
+                </form>
+            </div>
+        <% } %>
+       
+    </nav>
+</body>
+</html>
